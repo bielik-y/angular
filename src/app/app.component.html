@@ -1,0 +1,7 @@
+<h3>{{title}}</h3>
+<app-directives></app-directives>
+<app-templates #counter><p>Привет! Я {{name}}</p></app-templates>
+<button (click)="counter.increment()">+</button>
+<button (click)="counter.decrement()">-</button>
+<app-pipes></app-pipes>
+

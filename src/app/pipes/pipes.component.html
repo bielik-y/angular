@@ -1,0 +1,23 @@
+<h3>Pipes</h3>
+<p class="green">DatePipe</p>
+<div>Без форматирования: {{myDate}}</div>
+<div>С форматированием: {{myDate | date | uppercase}}</div>
+<p class="green">DecimalPipe</p>
+<div>Без форматирования: {{pi}}</div>
+<div>С форматированием: {{pi | number:'2.4'}}</div> 
+<p class="green">SlicePipe</p>
+<div>Без форматирования: {{text}}</div>
+<div>С форматированием: {{text | slice:3:6}}</div> 
+<p class="green">PercentPipe</p>
+<div>Без форматирования: {{number}}</div>
+<div>С форматированием: {{number | percent}}</div>
+
+<h3>Мой Pipe (номер телефона)</h3>
+<div>Без форматирования: {{phoneNumber1}}</div>
+<div>С форматированием: {{phoneNumber1 | phone}}</div>
+<br>
+<div>Без форматирования: {{phoneNumber2}}</div>
+<div>С форматированием: {{phoneNumber2 | phone}}</div>
+<br>
+<div>Без форматирования: {{phoneNumber3}}</div>
+<div>С форматированием: {{phoneNumber3 | phone}}</div>

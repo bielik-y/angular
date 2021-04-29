@@ -1,0 +1,25 @@
+<div>
+    <button (click)="toggle()">{{button}}</button>
+    <div *ngIf="flag" class="block-1">
+        <h4>Дриективы</h4>
+        <p> Это был пример использования структурной директивы ngIf. Далее в таблицу выводятся элементы массива, 
+            с помощью еще одной структурной директивы ngFor. C помощью атрибутивной директивы ngClass реализовано
+            чередованиe цвета в таблице. </p>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>Номер рейса</th>
+                <th>Авиакомпания</th>
+                <th>Время отправления</th>
+                <th>Время прибытия</th>
+            </tr>
+            <tr *ngFor="let flight of flights; let i = index" [ngClass]="{'even' : !(i%2), 'odd': (i%2)} ">
+                <td>{{flight.number}}</td>
+                <td>{{flight.company}}</td>
+                <td>{{flight.departure}}</td>
+                <td>{{flight.arrival}}</td>
+            </tr>
+        </table>
+    </div>  
+</div>
